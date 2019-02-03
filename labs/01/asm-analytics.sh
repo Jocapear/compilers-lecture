@@ -20,7 +20,7 @@ while read line; do
                     COUNTER=$((COUNTER + 1))
                 fi
             done
-        fi   
+        fi
     elif [[ $line =~ ^[a-z0-9].*:$ ]]; then
         ADDRESS="${line:0:16}"
         FUNCTION="${line:18:-2}"

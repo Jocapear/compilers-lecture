@@ -10,6 +10,6 @@ float foo(){
 int main(void) {
     printf("Hello World\n");
     float result = foo();
-    printf("%f",result);
+    printf("%f\n",result);
     return 0;
 }
