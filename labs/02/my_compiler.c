@@ -101,7 +101,6 @@ int syntax_analysis(char *file_name){
 	fclose(file);
 }
 
-
 int main(int argc, char *argv[]){
 	if( argc == 2 ) {
 		syntax_analysis(argv[1]);
