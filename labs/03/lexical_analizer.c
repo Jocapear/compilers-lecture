@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <ctype.h>
 
 void lexical_analizer(char* file_name){
 	printf("%s\n", file_name);
@@ -32,6 +33,10 @@ void lexical_analizer(char* file_name){
 			fputs("minus", output);
 		}else if(c == '+'){
 			fputs("plus", output);
+		}else if(c == '*'){
+			fputs("mul", output);
+		}else if(c == '/'){
+			fputs("div", output);
 		}else if(c == ' ' || c == '\n'){
 			fputc(c, output);
 		}else if(isdigit(c)){
